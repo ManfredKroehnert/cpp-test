@@ -21,5 +21,5 @@ pool:
 
 steps:
 - script: |
-    mkdir build; cd build; cmake ..; cmake --build .
+    mkdir build_$(imageName); cd build_$(imageName); cmake ..; cmake --build .
   displayName: 'build'
